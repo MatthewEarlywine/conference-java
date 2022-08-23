@@ -17,8 +17,11 @@ public class Application {
 		
 		System.out.println("This is test code");
 		System.out.println(service.findAll().get(0).getFirstName());
+		System.out.println(service);
 		System.out.println(service.findAll().get(0).getLastName());
 		System.out.println("Test successful");
+		SpeakerService service2 = appContext.getBean("speakerService", SpeakerService.class);
+		System.out.println(service2);
 	}
 
 }
